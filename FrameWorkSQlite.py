@@ -43,7 +43,7 @@ def createRecord():
 	fieldValues = ",".join(fieldValues)
 	cursor.execute(f"INSERT INTO {table} VALUES({fieldValues})")
 	connection.commit()
-	print("Record added!")
+	print(messages['RecordCreated'])
 
 def showRecords():
 	fields = ",".join(fieldNames)
